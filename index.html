@@ -31,6 +31,7 @@
 
 				<!-- Main -->
 					<div id="main">
+						<div id="instafeed"></div>
 						<article class="thumb">
 							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
 							<h2>Magna feugiat lorem</h2>
@@ -148,6 +149,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+			<script type="text/javascript">
+			    var feed = new Instafeed({
+			        get: 'tagged',
+			        tagName: 'sumedang',
+			        clientId: '	a780fb7fe6a44a1a9cac2b5bea524984'
+			    });
+			    feed.run();
+			</script>
 	</body>
 </html>
