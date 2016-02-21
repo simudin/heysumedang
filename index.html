@@ -18,7 +18,8 @@
 		    var feed = new Instafeed({
 		        get: 'tagged',
 		        tagName: 'sumedang',
-		        clientId: '	a780fb7fe6a44a1a9cac2b5bea524984'
+		        clientId: '	a780fb7fe6a44a1a9cac2b5bea524984',
+		        template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
 		    });
 		    feed.run();
 		</script>
@@ -40,7 +41,9 @@
 
 				<!-- Main -->
 					<div id="main">
-						<div id="instafeed"></div>
+						<div id="instafeed">
+							
+						</div>
 						<article class="thumb">
 							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
 							<h2>Magna feugiat lorem</h2>
