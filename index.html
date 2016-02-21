@@ -13,13 +13,16 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
 		<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
 		<script type="text/javascript">
 		    var feed = new Instafeed({
 		        get: 'tagged',
 		        tagName: 'inimahsumedang',
 		        clientId: 'a780fb7fe6a44a1a9cac2b5bea524984',
-		        accessToken: '278205549.a780fb7.4b4d03b3d3544f70a8deb59a62a903a9'
+		        accessToken: '278205549.a780fb7.4b4d03b3d3544f70a8deb59a62a903a9',
+		        template: '<a class="animation" href="{{link}}"><img src="http:{{image}}" /></a>'
 		    });
 		    feed.run();
 		</script>
@@ -155,8 +158,7 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
+
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
